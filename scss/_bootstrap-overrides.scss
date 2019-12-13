@@ -3,14 +3,19 @@
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $gray-100 !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
 }
 
 a {
-  color: $primary;
+  color: $gray-100;
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: $white;
+    text-decoration: none;
   }
 }

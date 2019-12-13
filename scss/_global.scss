@@ -3,7 +3,9 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  background: $primary;
+  background: -webkit-radial-gradient(center, ellipse cover, #202b3d, #141b26 100%);
+  color: $gray-100;
 }
 @media (min-width: 992px) {
   body {
@@ -21,20 +23,20 @@ h6 {
   @include heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: $gray-100;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 4.5rem;
+  line-height: 4rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 p.lead {
@@ -54,8 +56,9 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
+    background-color: transparent;
+    border: 1px solid $gray-100;
+    color: $gray-100;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -65,16 +68,21 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: rgba(255,255,255,0.08);
     }
   }
 }
 
 .dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    &:hover {
-      color: $primary;
+  font-size: 4rem;
+
+  .list-inline-item {
+    width: 50px;
+    i {
+      font-size: 3rem;
+      &:hover {
+        font-size: 3.1rem;
+      }
     }
   }
 }
